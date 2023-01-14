@@ -6,7 +6,7 @@ import { SubscriptionExpiredView } from 'react-native-subscription-expired';
 export default function App() {
   return (
     <View style={styles.container}>
-      <SubscriptionExpiredView color="#32a852" style={styles.box} />
+      <SubscriptionExpiredView />
     </View>
   );
 }
