@@ -9,7 +9,7 @@ export const ConditionalRendering = ({
   content,
   children,
 }: ConditionalRenderingProps) => {
-  if (!!content) {
+  if (content) {
     return <>{content}</>;
   }
   return <>{children}</>;
