@@ -1,6 +1,8 @@
 react-native-subscription-expired
 =================================
 
+<img src="https://github.com/pawanpyakurel/react-native-subscription-expired/blob/main/resources/screenshoots/defaultView.png" width="250" height="500" />
+
 A simple and easy to use subscription expired dialog for React Native apps.
 
 Installation
