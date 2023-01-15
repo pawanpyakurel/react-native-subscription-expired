@@ -9,7 +9,7 @@ export default function App() {
     <View style={styles.container}>
       <SubscriptionExpiredView
         validTill={validTill}
-        itemStyle={{ footer: { backgroundColor: 'red' } }}
+        // itemStyle={{ footer: { backgroundColor: 'red' } }}
         // Heading={<Text>dadfafd</Text>}
       >
         <Text>Our Content</Text>
