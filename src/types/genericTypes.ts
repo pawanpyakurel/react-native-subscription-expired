@@ -7,3 +7,5 @@ export interface StyleProps {
     | { [key: string]: string | number | React.FC<any> }
     | any;
 }
+
+export type Style = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;

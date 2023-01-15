@@ -1,0 +1,17 @@
+export const colors = {
+  primary: '#127DFF',
+  primaryFaded2: '#137cfc1a',
+  primaryFaded: '#137cfc33',
+  secondary: '#FF8C3C',
+  secondaryFaded2: '#ff8c3c21',
+  secondaryFaded: '#ff8c3c3d',
+  backgroundColor: '#F4F8FD',
+  gray: '#929292',
+  grayFaded: '#6b6b6b1a',
+  dark: '#121212',
+  darkFaded: '#1a202cb3',
+  light: '#FFFFFF',
+  green: '#30BD48',
+  greenFaded: '#30bd4833',
+  error: '#df0404',
+};

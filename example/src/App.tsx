@@ -1,12 +1,19 @@
 import * as React from 'react';
 
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { SubscriptionExpiredView } from 'react-native-subscription-expired';
 
 export default function App() {
+  const validTill = new Date('2022-10-15');
   return (
     <View style={styles.container}>
-      <SubscriptionExpiredView />
+      <SubscriptionExpiredView
+        validTill={validTill}
+        itemStyle={{ footer: { backgroundColor: 'red' } }}
+        // Heading={<Text>dadfafd</Text>}
+      >
+        <Text>Our Content</Text>
+      </SubscriptionExpiredView>
     </View>
   );
 }
