@@ -62,7 +62,9 @@ Props
 | Property  | Type     | #Option    | Default Value |Description |
 | :---:     | :---:    | :---:     |:---:          |    :---:   |
 | validTill | Date     | Required  | undefined     |            |
-| Heading | JSX     |   Optional  |                |
+| Body | JSX     |   Optional  |                |            |
+| Footer | JSX     |   Optional  |                |           |
+| Heading | JSX     |   Optional  |                |           |
 
 
 
