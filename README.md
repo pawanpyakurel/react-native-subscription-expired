@@ -1,31 +1,89 @@
-# react-native-subscription-expired
+react-native-subscription-expired
+=================================
 
-subscription expired module
+<img src="https://github.com/pawanpyakurel/react-native-subscription-expired/blob/main/resources/screenshoots/defaultView.png" width="250" height="500" />
 
-## Installation
+A simple and easy to use subscription expired dialog for React Native apps.
 
-```sh
+Installation
+------------
+
+You can install the package via npm:
+
+```
 npm install react-native-subscription-expired
+
 ```
 
-## Usage
+or via yarn:
 
-```js
-import { SubscriptionExpiredView } from "react-native-subscription-expired";
+```
+yarn add react-native-subscription-expired
 
-// ...
-
-<SubscriptionExpiredView color="tomato" />
 ```
 
-## Contributing
+Usage
+-----
+### Wrap your project with `SubscriptionExpired` at the top
+```
+import React from 'react';
+import {RootNavigation} from './navigation/rootNavigation';
+import {NavigationContainer} from '@react-navigation/native';
+import {navigationRef} from './navigation/navigationService';
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+// subscription-expired import
+import {SubscriptionExpiredView} from 'react-native-subscription-expired';
 
-## License
+const App = () => {
 
-MIT
+  //app will be validate upto
+  const subscriptionValidatonDate = new Date('2023-03-01');
 
----
+  return (
+    <SubscriptionExpiredView validTill={subscriptionValidatonDate}> //subscription-expired wrapping
+    
+    // your rest code here
+      <GestureHandlerRootView style={{flex: 1}}>
+        <NavigationContainer ref={navigationRef}>
+           <RootNavigation />
+         </NavigationContainer>
+      </GestureHandlerRootView>
+    </SubscriptionExpiredView>
+  );
+};
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+export default App;
+
+```
+
+Props
+-----
+
+| Property  | Type     | #Option    | Default Value |Description |
+| :---:     | :---:    | :---:     |:---:          |    :---:   |
+| validTill | Date     | Required  | undefined     |            |
+| Body | JSX     |   Optional  |                |            |
+| Footer | JSX     |   Optional  |                |           |
+| Heading | JSX     |   Optional  |                |           |
+
+
+
+Example
+-------
+
+You can find an example of how to use the package in the [example](https://github.com/pawanpyakurel/react-native-subscription-expired/tree/master/example) folder.
+
+Support
+-------
+
+Please open an issue if you find any bug or have any feature request.
+
+Contribution
+------------
+
+Please feel free to open a pull request if you want to contribute to this project.
+
+Licence
+-------
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/pawanpyakurel/react-native-subscription-expired/blob/master/LICENSE) file for details.
